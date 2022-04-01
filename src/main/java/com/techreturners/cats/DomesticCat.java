@@ -1,5 +1,7 @@
 package com.techreturners.cats;
 
+import java.util.Random;
+
 public class DomesticCat extends CatBehavior implements Cat {
 
    public DomesticCat(){
@@ -9,6 +11,10 @@ public class DomesticCat extends CatBehavior implements Cat {
 
     @Override
     public String eat() {
-        return "Purrrrrrr";
+        Random randomNumber = new Random();
+        if (randomNumber.nextInt(10)%2==0)
+            return "Purrrrrrr";
+
+        return "It will do I suppose";
     }
 }
