@@ -9,6 +9,6 @@ public class DomesticCat extends CatBehavior implements Cat {
 
     @Override
     public String eat() {
-        return null;
+        return "Purrrrrrr";
     }
 }
