@@ -1,33 +1,10 @@
 package com.techreturners.cats;
 
-public class CheetahCat implements Cat {
-    @Override
-    public boolean isAsleep() {
-        return false;
-    }
-
-    @Override
-    public void goToSleep() {
-
-    }
-
-    @Override
-    public void wakeUp() {
-
-    }
-
-    @Override
-    public String getSetting() {
-        return null;
-    }
-
-    @Override
-    public int getAverageHeight() {
-        return 0;
-    }
+public class CheetahCat extends CatBehavior implements Cat {
 
     @Override
     public String eat() {
-        return null;
+        return "Zzzzzzz";
     }
 }
+
