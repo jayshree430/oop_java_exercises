@@ -73,7 +73,7 @@ public class CatTest {
     @Test
     public void DometicCatIsFed() {
         Cat domesticCat = new DomesticCat();
-        assertEquals("Purrrrrrr", domesticCat.eat());
+        assertEquals("It will do I suppose", domesticCat.eat());
     }
 
 }
