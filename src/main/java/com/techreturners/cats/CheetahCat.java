@@ -1,6 +1,6 @@
 package com.techreturners.cats;
 
-public class CheetahCat extends CatBehavior {
+public class CheetahCat extends Cat {
 
     @Override
     public String eat() {

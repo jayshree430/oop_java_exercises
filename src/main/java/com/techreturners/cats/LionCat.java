@@ -1,6 +1,6 @@
 package com.techreturners.cats;
 
-public class LionCat extends CatBehavior{
+public class LionCat extends Cat {
 
         public LionCat(){
                 averageHeight = 1100;

@@ -2,7 +2,7 @@ package com.techreturners.cats;
 
 import java.util.Random;
 
-public class DomesticCat extends CatBehavior{
+public class DomesticCat extends Cat {
 
    public DomesticCat(){
         setting = "domestic";
