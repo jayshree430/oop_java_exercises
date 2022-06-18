@@ -4,10 +4,9 @@ import java.util.Random;
 
 public class DomesticCat extends Cat {
 
-   public DomesticCat(){
-        setting = "domestic";
-        averageHeight = 23;
-   }
+    public DomesticCat(){
+        super(Setting.DOMESTIC, 23);
+    }
 
     @Override
     public String eat() {

@@ -4,11 +4,15 @@ abstract class Cat implements CatBehaviour {
 
     public enum Setting {DOMESTIC, WILD}
 
-    boolean isAsleep = false;
+    boolean isAsleep;
     protected float averageHeight;
-    protected String setting;
+    protected Setting setting;
     protected String eatingStyle;
-
+    public Cat(Setting setting, int averageHeight) {
+        this.isAsleep = false;
+        this.setting = setting;
+        this.averageHeight = averageHeight;
+    }
 
     public boolean isAsleep(){
         return isAsleep;
@@ -23,7 +27,7 @@ abstract class Cat implements CatBehaviour {
     }
 
     public String getSetting(){
-        return  setting;
+        return setting.name().toLowerCase();
     }
 
     public float getAverageHeight(){

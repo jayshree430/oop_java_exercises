@@ -3,7 +3,7 @@ package com.techreturners.cats;
 public class LionCat extends Cat {
 
         public LionCat(){
-                averageHeight = 1100;
+                super(Setting.WILD, 1100);
         }
         @Override
         public String eat(){
